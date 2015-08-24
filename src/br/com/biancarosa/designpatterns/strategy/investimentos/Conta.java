@@ -9,10 +9,12 @@ public class Conta {
 	}
 	
 	public void saca(Double valor) {
+		System.out.println("Sacando "+valor);
 		this.saldo -= valor;
 	}
 	
 	public void deposita(Double valor) {
+		System.out.println("Depositando "+valor);
 		this.saldo += valor;
 	}
 }
