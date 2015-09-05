@@ -5,13 +5,13 @@ import java.math.BigDecimal;
 public class CalculadorDeImposto {
 	
 	static void calculaImposto(Orcamento orcamento, Imposto imposto) {
-		BigDecimal valorDoImposto = imposto.calcula(orcamento);
+		double valorDoImposto = imposto.calcula(orcamento);
 		
 		System.out.println(valorDoImposto);
 	}
 	
 	public static void main(String[] args) {
-		Orcamento orcamento = new Orcamento(new BigDecimal(50));
+		Orcamento orcamento = new Orcamento(50);
 		
 		calculaImposto(orcamento, new ICMS());
 		
